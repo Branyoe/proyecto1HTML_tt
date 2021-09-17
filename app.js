@@ -18,6 +18,10 @@ app.get('/p3', (req, res) => {
   res.sendFile(__dirname + '/public/p3.html');
 });
 
+app.get('/form', (req, res) => {
+  res.sendFile(__dirname + '/public/formulario.html');
+});
+
 app.listen(port, () => {
   console.log('Server on port 3000');
 });
